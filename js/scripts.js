@@ -11,7 +11,46 @@
 */
 
 (function($) {
-
+    var languages = [
+                    "javascript", 
+                    "css3", 
+                    "html5", 
+                    "nodejs",
+                    "react",
+                    "jquery",
+                    "postgresql",
+                    "express",
+                    "python", 
+                    "c", 
+                    "cplusplus", 
+                    "csharp",
+                    ];
+    var lookup = {
+        "javascript": "Javascript", 
+        "css3": "CSS3", 
+        "html5": "HTML5", 
+        "nodejs":"Node",
+        "react": "React",
+        "jquery": "jQuery",
+        "postgresql": "PostgreSQL",
+        "express": "Express",
+        "python": "Python", 
+        "c": "C", 
+        "cplusplus": "C++", 
+        "csharp": "C#"
+    }
+    var skillslist = ``;
+    for(let i = 0; i < languages.length; i++){
+        skillslist = skillslist.concat(`
+        <li>
+            <h3>${lookup[languages[i]]}</h2>
+            <img src="./devicon-master/icons/${languages[i]}/${languages[i]}-original.svg" alt="${languages[i]}"> 
+        </li>
+        `)
+    }
+    console.log(skillslist);
+    $('#skills ul').append(skillslist);
+    
     // Remove no-js class
     $('html').removeClass('no-js');
 

@@ -682,10 +682,10 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
+        width: 130px;
     }
 }
 
@@ -949,7 +949,6 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
-
     #lead-content {
         h1 {
             font-size: 1.5em;
@@ -964,5 +963,4 @@ footer {
             padding: 5px 10px;
         }
     }
-
 }
