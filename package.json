@@ -1,28 +1,29 @@
 {
-  "name": "devportfolio-template",
-  "version": "1.1.3",
-  "description": "",
-  "main": "js/scripts.js",
-  "scripts": {
-    "watch": "gulp watch"
-  },
-  "keywords": [
-    "portfolio",
-    "personal",
-    "website",
-    "tech",
-    "coding",
-    "dev"
-  ],
-  "author": "",
-  "license": "",
-  "devDependencies": {
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "* Gulp ready (compiles Sass and minifies JS)\r * Sass ready with lots of commenting\r * Fully responsive\r * Comes with Bootstrap grid system\r * Easy colour changes can be done through simple variable edits",
+  "main": "gulpfile.js",
+  "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-plumber": "^1.1.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
-    "gulp-uglify": "^3.0.0",
-    "gulp-wait": "0.0.2"
-  }
+    "node-sass": "^4.9.3",
+    "uglify-js": "^3.4.9"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "uglify-js": "uglifyjs --watch js/scripts.js -o js/scripts.min.js",
+    "scss": "node-sass --watch scss -o css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LynxHack/LynxHack.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LynxHack/LynxHack.github.io/issues"
+  },
+  "homepage": "https://github.com/LynxHack/LynxHack.github.io#readme"
 }

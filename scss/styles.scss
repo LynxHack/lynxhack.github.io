@@ -1,5 +1,6 @@
 // Define base and accent colors
-$base-color: #3498db;
+// $base-color: #3498db;
+$base-color: black;
 $base-color-hover: darken($base-color, 10%);
 
 // Define background colors
@@ -322,6 +323,7 @@ footer {
 }
 
 #lead-content {
+    $lead-content-color: gold;
     position: absolute;
     z-index: 10;
     top: 50%;
@@ -334,7 +336,7 @@ footer {
     }
 
     h1 {
-        color: #fff;
+        color: $lead-content-color;
         font-weight: 900;
         font-size: 5em;
         text-transform: uppercase;
@@ -343,7 +345,7 @@ footer {
     }
 
     h2 {
-        color: lighten($base-color, 25%);
+        color: lighten($lead-content-color, 25%);
         font-weight: 500;
         font-size: 2.25em;
         margin-bottom: 15px;
@@ -680,10 +682,10 @@ footer {
         margin: 7px;
         padding: 5px 10px;
         color: $heading;
-        background: darken($background-alt, 5%);
         list-style: none;
         cursor: default;
         font-size: 1.2em;
+        width: 130px;
     }
 }
 
@@ -947,7 +949,6 @@ footer {
 
 // Extra Small Devices
 @media only screen and (max-width : 480px) {
-
     #lead-content {
         h1 {
             font-size: 1.5em;
@@ -962,5 +963,4 @@ footer {
             padding: 5px 10px;
         }
     }
-
 }
