@@ -24,6 +24,7 @@
                     "c", 
                     "cplusplus", 
                     "csharp",
+                    "go"
                     ];
     var lookup = {
         "javascript": "Javascript", 
@@ -37,7 +38,8 @@
         "python": "Python", 
         "c": "C", 
         "cplusplus": "C++", 
-        "csharp": "C#"
+        "csharp": "C#", 
+        "go": "Go"
     }
     var skillslist = ``;
     for(let i = 0; i < languages.length; i++){
