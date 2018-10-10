@@ -358,7 +358,7 @@ footer {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba($base-color-hover, 0.8);
+    background: black;
     z-index: 1;
 }
 
@@ -717,15 +717,15 @@ footer {
         border: none;
         margin-bottom: 10px;
         background: white;
-        color: #fff;
+        color: black;
         @include transition();
         @include placeholder {
-            color: #fff;
+            color:rgba(0,0,0,0.3);
         }
 
         &:focus {
             outline: none;
-            background: darken($base-color, 25%);
+
         }
     }
 

@@ -236,7 +236,7 @@ footer {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.8);
+  background: black;
   z-index: 1; }
 
 #lead-down {
@@ -513,21 +513,20 @@ footer {
     border: none;
     margin-bottom: 10px;
     background: white;
-    color: #fff;
+    color: black;
     transition: 0.5s ease all; }
     #contact-form input::-webkit-input-placeholder, #contact-form textarea::-webkit-input-placeholder {
-      color: #fff; }
+      color: rgba(0, 0, 0, 0.3); }
     #contact-form input:-moz-placeholder, #contact-form textarea:-moz-placeholder {
-      color: #fff;
+      color: rgba(0, 0, 0, 0.3);
       opacity: 1; }
     #contact-form input::-moz-placeholder, #contact-form textarea::-moz-placeholder {
-      color: #fff;
+      color: rgba(0, 0, 0, 0.3);
       opacity: 1; }
     #contact-form input:-ms-input-placeholder, #contact-form textarea:-ms-input-placeholder {
-      color: #fff; }
+      color: rgba(0, 0, 0, 0.3); }
     #contact-form input:focus, #contact-form textarea:focus {
-      outline: none;
-      background: black; }
+      outline: none; }
   #contact-form textarea {
     height: 150px;
     resize: none; }
