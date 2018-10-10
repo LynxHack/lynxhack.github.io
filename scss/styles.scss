@@ -422,6 +422,17 @@ footer {
         color: $text;
         margin: 0;
     }
+
+    img{
+        border-radius: 20px;
+        float: left;
+        width: 45%;
+    }
+
+    #about-content{
+        float: right;
+        width: 50%;
+    }
 }
 
 /*
