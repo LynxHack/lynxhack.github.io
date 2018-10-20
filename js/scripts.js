@@ -43,6 +43,8 @@
         "csharp": "C#", 
         "go": "Go"
     }
+
+    // Generate Skills Chart
     var skillslist = ``;
     for(let i = 0; i < languages.length; i++){
         skillslist = skillslist.concat(`
@@ -55,6 +57,23 @@
     console.log(skillslist);
     $('#skills ul').append(skillslist);
     
+    // Generate Project List
+    var projectdom = `                
+        <div class="project shadow-large">
+            <div class="project-image">
+                <img src="images/project.jpg" />
+            </div>
+            <div class="project-info">
+                <h3>Project Name Here</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in iaculis ex. Etiam volutpat laoreet urna. Morbi ut tortor nec nulla commodo malesuada sit amet vel lacus. Fusce eget efficitur libero. Morbi dapibus porta quam laoreet placerat.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+        </div>
+        `
+    
+
     // Remove no-js class
     $('html').removeClass('no-js');
 
