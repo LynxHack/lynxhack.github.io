@@ -14,7 +14,8 @@
 
 (function($) {
     var languages = [
-                    "javascript", 
+                    "java",
+                    "javascript",
                     "css3", 
                     "html5", 
                     "nodejs",
@@ -29,6 +30,7 @@
                     "go"
                     ];
     var lookup = {
+        "java": "Java",
         "javascript": "Javascript", 
         "css3": "CSS3", 
         "html5": "HTML5", 
